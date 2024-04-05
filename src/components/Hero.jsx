@@ -23,7 +23,7 @@ const Hero = () => {
 							variants={container(0)}
 							initial="hidden"
 							animate="visible"
-							className="text-5xl  font-thin tracking-tight pb-4 lg:pb-16 py-2 lg:text-7xl"
+							className="text-4xl  font-thin tracking-tight pb-4 lg:pb-16 py-2 lg:text-7xl"
 						>
 							Avinash Palakurthi
 						</motion.h1>

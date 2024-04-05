@@ -1,5 +1,6 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiSemanticuireact } from "react-icons/si";
+
 const Navbar = () => {
 	return (
 		<nav className=" text-white py-3 mb-20  w-full ">
@@ -13,9 +14,21 @@ const Navbar = () => {
 					</p>
 				</div>
 				<div className="flex items-center md:gap-10 gap-4  text-gray-400 mx-2">
-					<FaGithub className="lg:size-8 size-6" />
-					<FaLinkedin className="lg:size-8 size-6" />
-					<FaTwitter className="lg:size-8 size-6" />
+					<a
+						href="https://github.com/avinash-palakurthi"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaGithub className="lg:size-8 size-6" />
+					</a>
+
+					<a
+						href="https://www.linkedin.com/in/avinashpalakurthi0721/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaLinkedin className="lg:size-8 size-6" />
+					</a>
 				</div>
 			</div>
 		</nav>

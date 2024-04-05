@@ -1,5 +1,6 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 const Contact = () => {
 	return (
 		<div
@@ -32,15 +33,21 @@ const Contact = () => {
 				>
 					{CONTACT.phoneNo}
 				</motion.p>
-				<motion.a
-					whileInView={{ opacity: 1, x: 0 }}
-					initial={{ opacity: 0, x: -100 }}
-					transition={{ duration: 1 }}
-					href="#"
-					className="border-b"
-				>
-					{CONTACT.email}
-				</motion.a>
+
+				<div className="flex items-center justify-center gap-2 ">
+					<MdOutlineAlternateEmail size={20} className="mt-2" />
+					<motion.a
+						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, x: -100 }}
+						transition={{ duration: 1 }}
+						href="mailto:palakurthiavinash.career@gmail.com"
+						className="border-b"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{CONTACT.email}
+					</motion.a>
+				</div>
 			</div>
 		</div>
 	);
